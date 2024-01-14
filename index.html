@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Intro component with sign up form</title>
+  </head>
+  <body>
+    <main>
+      <div class="header">
+        <h1 class="header__title">Learn to code by watching others</h1>
+        <p class="header__description">
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </div>
+
+      <div class="form-container">
+        <div class="form-container__ad">
+          <p class="form-container__ad__description">
+            <span class="form-container__ad__description__important"
+              >Try it free 7 days</span
+            >
+            then $20/mo. thereafter
+          </p>
+        </div>
+        <form class="form-container__form" id="form">
+          <input
+            type="text"
+            name = 'fname'
+            placeholder="First Name"
+            id="form-container__form_fname"
+            class="form-item"
+            required
+          />
+          <p class="error-message fname">First Name can not be empty</p>
+          <input
+            type="text"
+            name='lname'
+            placeholder="Last Name"
+            id="form-container__form_lname"
+            class="form-item"
+            required
+          />
+          <p class="error-message lname">Last Name can not be empty</p>
+          <input
+            type="email"
+            name="email"
+            placeholder="Email Address"
+            id="form-container__form__email"
+            class="form-item"
+            required
+          />
+          <p class="error-message email">Email can not be empty</p>
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            id="form-container__form_password"
+            class="form-item"
+            required
+          />
+          <p class="error-message password">Password can not be empty</p>
+          <button class="form-container__form__btn">
+            Claim your free trial
+          </button>
+
+          <p class="form-container__form__agreements">
+            By clicking the button, you are agreeing to our
+            <span class="form-container__form__agreements__terms"
+              >Terms and Services</span
+            >
+          </p>
+        </form>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>

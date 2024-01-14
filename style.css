@@ -1,0 +1,145 @@
+:root {
+  --c-red: hsl(0, 100%, 74%);
+  --c-green: hsl(154, 59%, 51%);
+  --c-blue: hsl(248, 32%, 49%);
+  --c-dark-blue: hsl(249, 10%, 26%);
+  --c-gray-blue: hsl(246, 25%, 77%);
+
+  --fw-light: 400;
+  --fw-regular: 500;
+  --fw-dark: 600;
+  --fw-bold: 700;
+}
+
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  min-height: 100vh;
+  background-image: url("./images/bg-intro-mobile.png");
+  background-color: var(--c-red);
+  display: flex;
+  align-items: center;
+}
+
+main {
+  margin: 1em;
+}
+
+main > * {
+  margin: 2em 0 2em 0;
+}
+.header {
+  text-align: center;
+}
+.header__title {
+  color: white;
+  font-size: 2rem;
+  font-weight: var(--fw-bold);
+  margin-bottom: 1em;
+}
+
+.header__description {
+  color: white;
+  font-weight: var(--fw-light);
+}
+
+.form-container__ad {
+  background-color: var(--c-blue);
+  color: var(--c-gray-blue);
+  font-weight: var(--fw-light);
+  padding: 1em;
+  border-radius: 0.5em;
+  text-align: center;
+  column-gap: 1em;
+}
+
+.form-container__ad__description {
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+.form-container__ad__description__important {
+  color: white;
+  font-weight: var(--fw-dark);
+}
+
+.form-container__form {
+  margin-top: 1.5em;
+  border-radius: 0.5em;
+  background-color: white;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container__form > * {
+  margin: 0.5em 0px 0.5em 0px;
+}
+.form-item {
+  border: 1px solid var(--c-dark-blue);
+  display: block;
+  padding: 1em;
+  font-weight: var(--fw-bold);
+}
+
+.error {
+  border: 2px solid var(--c-red);
+  background: url(./images/icon-error.svg) no-repeat 95% 50%;
+}
+
+.form-container__form__btn {
+  background-color: var(--c-green);
+  text-transform: uppercase;
+  color: white;
+  padding: 1em;
+  border-radius: 0.5em;
+}
+.form-container__form__btn:hover {
+  cursor: pointer;
+}
+
+.form-container__form__agreements {
+  color: var(--c-gray-blue);
+  text-align: center;
+  font-size: 0.7rem;
+}
+
+.form-container__form__agreements__terms {
+  color: var(--c-red);
+  font-weight: var(--fw-dark);
+  font-size: inherit;
+}
+
+.error-message {
+  display: none;
+  color: var(--c-red);
+  text-align: right;
+}
+@media screen and (min-width: 50em) {
+  main {
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+  }
+  .header {
+    flex: 1;
+  }
+
+  .header__title {
+    font-size: 3rem;
+    text-align: left;
+  }
+  .header__description {
+    text-align: left;
+  }
+  .form-container {
+    flex: 1;
+  }
+}
