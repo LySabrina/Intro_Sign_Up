@@ -83,7 +83,7 @@ main > * {
   margin: 0.5em 0px 0.5em 0px;
 }
 .form-item {
-  border: 1px solid var(--c-dark-blue);
+  border: 1px solid var(--c-gray-blue);
   display: block;
   padding: 1em;
   font-weight: var(--fw-bold);
@@ -126,6 +126,7 @@ main > * {
   main {
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 2em;
   }
   .header {
@@ -141,5 +142,9 @@ main > * {
   }
   .form-container {
     flex: 1;
+  }
+
+  .form-container__ad__description{
+    max-width: 100%;
   }
 }
